@@ -1,0 +1,231 @@
+/* ========================================
+   ANIMATIONS CSS
+======================================== */
+
+
+/* ========================================
+   KEYFRAMES
+======================================== */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ========================================
+   PAGE LOAD ANIMATIONS
+======================================== */
+
+.announcement-bar {
+    animation: fadeInDown 0.5s ease both;
+}
+
+.site-header {
+    animation: fadeInDown 0.5s ease 0.1s both;
+}
+
+.hero-content {
+    animation: fadeInUp 0.7s ease 0.2s both;
+}
+
+.hero-image {
+    animation: fadeIn 0.9s ease 0.3s both;
+}
+
+.category-card {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.category-card:nth-child(1) { animation-delay: 0.1s; }
+.category-card:nth-child(2) { animation-delay: 0.2s; }
+.category-card:nth-child(3) { animation-delay: 0.3s; }
+.category-card:nth-child(4) { animation-delay: 0.4s; }
+
+.product-card {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+
+.testimonial-card {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+
+
+/* ========================================
+   AUTH PAGE ANIMATIONS
+======================================== */
+
+.login-form-container {
+    animation: slideInLeft 0.6s ease 0.1s both;
+}
+
+.signup-form-container {
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+
+/* ========================================
+   DASHBOARD ANIMATIONS
+======================================== */
+
+.dashboard-sidebar {
+    animation: slideInLeft 0.5s ease both;
+}
+
+.dashboard-content {
+    animation: fadeIn 0.5s ease 0.2s both;
+}
+
+
+/* ========================================
+   CART ANIMATIONS
+======================================== */
+
+.cart-item {
+    animation: fadeInUp 0.4s ease both;
+}
+
+.cart-summary {
+    animation: scaleIn 0.4s ease 0.2s both;
+}
+
+
+/* ========================================
+   PRODUCT DETAILS ANIMATIONS
+======================================== */
+
+.product-gallery {
+    animation: fadeIn 0.6s ease both;
+}
+
+.product-information {
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+
+/* ========================================
+   JS-TRIGGERED ANIMATIONS
+======================================== */
+
+/* Button click feedback */
+.btn-clicked {
+    animation: btnClick 0.3s ease;
+}
+
+@keyframes btnClick {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0.92); }
+    100% { transform: scale(1); }
+}
+
+/* Cart icon pulse on add */
+.cart-pulse {
+    animation: cartPulse 0.5s ease;
+}
+
+@keyframes cartPulse {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(1.3); }
+    60%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+/* Cart count badge */
+.cart-count-badge {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #ff4d4f;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.action-btn {
+    position: relative;
+}
+
+/* Scroll fade-in (cards hidden until in view) */
+.product-card,
+.category-card,
+.deal-card,
+.testimonial-card,
+.service-card,
+.region-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-card.in-view,
+.category-card.in-view,
+.deal-card.in-view,
+.testimonial-card.in-view,
+.service-card.in-view,
+.region-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth tab content fade */
+.tab-content {
+    animation: fadeIn 0.4s ease;
+}

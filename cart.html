@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container top-bar-wrapper">
+                <div class="top-bar-left"><a href="index.html">Brand</a></div>
+                <div class="top-bar-right">
+                    <a href="#">English, USD</a>
+                    <a href="#">Ship to</a>
+                    <a href="auth.html">Log in</a>
+                    <a href="auth.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container main-header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="index.html"><img src="https://placehold.co/140x50/0D6EFD/ffffff?text=Brand" alt="Brand Logo"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <select><option>All category</option></select>
+                    <button type="button">Search</button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action-btn"><span class="action-icon">♡</span><span>Wishlist</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">📦</span><span>My orders</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">👤</span><span>My profile</span></a>
+                    <a href="cart.html" class="action-btn"><span class="action-icon">🛒</span><span>My cart</span><span class="cart-count-badge">0</span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container navbar-wrapper">
+                <div class="all-categories"><button type="button">☰ All categories</button></div>
+                <div class="navigation-menu">
+                    <ul class="nav-links">
+                        <li><a href="#">Hot offers</a></li>
+                        <li><a href="#">Gift boxes</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Menu item</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" type="button">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-ship"><a href="#">Ship to 🇩🇪</a></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="cart-page">
+
+        <section class="cart-section">
+            <div class="container">
+
+                <h1 class="cart-title">My cart (3)</h1>
+
+                <div class="cart-layout">
+
+                    <!-- Cart Items -->
+                    <div class="cart-items-section">
+
+                        <article class="cart-item">
+                            <input type="checkbox" checked>
+                            <div class="cart-item-image">
+                                <img src="https://placehold.co/300x300/FFF8E1/FF8C00?text=Product+1" alt="Product">
+                            </div>
+                            <div class="cart-item-details">
+                                <h2>T-shirts with multiple colors, for men and lady</h2>
+                                <p class="cart-item-meta">Size: M &nbsp;|&nbsp; Color: Blue</p>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <button type="button">-</button>
+                                <input type="number" value="1">
+                                <button type="button">+</button>
+                            </div>
+                            <div class="cart-item-price">
+                                <p>$70.00</p>
+                            </div>
+                            <div class="cart-item-remove">
+                                <button type="button">✕</button>
+                            </div>
+                        </article>
+
+                        <article class="cart-item">
+                            <input type="checkbox" checked>
+                            <div class="cart-item-image">
+                                <img src="https://placehold.co/300x300/E3F2FD/1565C0?text=Product+2" alt="Product">
+                            </div>
+                            <div class="cart-item-details">
+                                <h2>T-shirts with multiple colors, for men and lady</h2>
+                                <p class="cart-item-meta">Size: L &nbsp;|&nbsp; Color: Black</p>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <button type="button">-</button>
+                                <input type="number" value="2">
+                                <button type="button">+</button>
+                            </div>
+                            <div class="cart-item-price">
+                                <p>$80.00</p>
+                            </div>
+                            <div class="cart-item-remove">
+                                <button type="button">✕</button>
+                            </div>
+                        </article>
+
+                        <article class="cart-item">
+                            <input type="checkbox" checked>
+                            <div class="cart-item-image">
+                                <img src="https://placehold.co/300x300/E8F5E9/2E7D32?text=Product+3" alt="Product">
+                            </div>
+                            <div class="cart-item-details">
+                                <h2>T-shirts with multiple colors, for men and lady</h2>
+                                <p class="cart-item-meta">Size: S &nbsp;|&nbsp; Color: White</p>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <button type="button">-</button>
+                                <input type="number" value="1">
+                                <button type="button">+</button>
+                            </div>
+                            <div class="cart-item-price">
+                                <p>$60.00</p>
+                            </div>
+                            <div class="cart-item-remove">
+                                <button type="button">✕</button>
+                            </div>
+                        </article>
+
+                        <!-- Save for later -->
+                        <div class="save-later-bar">
+                            <button type="button">Save for later</button>
+                        </div>
+
+                        <!-- Trust Badges -->
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <span class="trust-icon">🔒</span>
+                                <div>
+                                    <p>Secure payment</p>
+                                    <small>Have you ever finally just</small>
+                                </div>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="trust-icon">📞</span>
+                                <div>
+                                    <p>Customer support</p>
+                                    <small>Have you ever finally just</small>
+                                </div>
+                            </div>
+                            <div class="trust-badge">
+                                <span class="trust-icon">🚚</span>
+                                <div>
+                                    <p>Free delivery</p>
+                                    <small>Have you ever finally just</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Saved For Later Products -->
+                        <div class="saved-for-later">
+                            <h3>Saved for later</h3>
+                            <div class="saved-products-grid">
+                                <article class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://placehold.co/300x300/FFF8E1/FF8C00?text=Product+1" alt="Product">
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-price">$99.00</p>
+                                        <h3>Smart Watch</h3>
+                                        <button type="button">Move to cart</button>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://placehold.co/300x300/E3F2FD/1565C0?text=Product+2" alt="Product">
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-price">$120.00</p>
+                                        <h3>iPhone 14</h3>
+                                        <button type="button">Move to cart</button>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://placehold.co/300x300/E8F5E9/2E7D32?text=Product+3" alt="Product">
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-price">$33.00</p>
+                                        <h3>Headphones</h3>
+                                        <button type="button">Move to cart</button>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <div class="product-image">
+                                        <img src="https://placehold.co/300x300/FCE4EC/AD1457?text=Product+4" alt="Product">
+                                    </div>
+                                    <div class="product-details">
+                                        <p class="product-price">$86.00</p>
+                                        <h3>Laptop Pro</h3>
+                                        <button type="button">Move to cart</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Summary -->
+                    <aside class="cart-summary">
+
+                        <!-- Coupon -->
+                        <div class="coupon-box">
+                            <p>Have a coupon?</p>
+                            <div class="coupon-input">
+                                <input type="text" placeholder="Add coupon">
+                                <button type="button">Apply</button>
+                            </div>
+                        </div>
+
+                        <h2>Order summary</h2>
+
+                        <div class="summary-item">
+                            <span>Subtotal (3 items)</span>
+                            <span>$210.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Discount</span>
+                            <span class="discount-value">- $10.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Tax</span>
+                            <span>$7.97</span>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span>$207.97</span>
+                        </div>
+
+                        <a href="checkout.html" class="checkout-btn">Checkout</a>
+
+                        <!-- Payment Icons -->
+                        <div class="payment-icons">
+                            <span>VISA</span>
+                            <span>MC</span>
+                            <span>PayPal</span>
+                            <span>Apple Pay</span>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Discount Banner -->
+        <section class="discount-banner-section">
+            <div class="container">
+                <div class="discount-banner">
+                    <p>Super discount on more than 100 USD</p>
+                    <span>Have a question?</span>
+                    <button type="button">Contact us</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            <div class="footer-column">
+                <h3>Brand</h3>
+                <p>Best information about the company goes here</p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For users</h3>
+                <ul>
+                    <li><a href="auth.html">Login</a></li>
+                    <li><a href="auth.html">Register</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <main class="admin-dashboard-page">
+        <div class="dashboard-layout">
+
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <div class="sidebar-logo">
+                    <h2>Brand Admin</h2>
+                </div>
+                <nav class="dashboard-navigation">
+                    <ul>
+                        <li><a href="#" class="active">📊 Dashboard</a></li>
+                        <li><a href="#">📦 Products</a></li>
+                        <li><a href="#">🛒 Orders</a></li>
+                        <li><a href="#">👥 Customers</a></li>
+                        <li><a href="#">⚙️ Settings</a></li>
+                        <li><a href="index.html">🏠 View Store</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="dashboard-content">
+
+                <!-- Dashboard Header -->
+                <header class="dashboard-header">
+                    <h1>Dashboard</h1>
+                    <div class="dashboard-header-actions">
+                        <span>Welcome, Admin</span>
+                        <a href="auth.html">Logout</a>
+                    </div>
+                </header>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-info">
+                            <p class="stat-value">1,245</p>
+                            <p class="stat-label">Total Products</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛒</div>
+                        <div class="stat-info">
+                            <p class="stat-value">385</p>
+                            <p class="stat-label">Total Orders</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <p class="stat-value">2,840</p>
+                            <p class="stat-label">Total Customers</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <p class="stat-value">$48,295</p>
+                            <p class="stat-label">Total Revenue</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Management -->
+                <section class="products-management-section">
+
+                    <div class="section-toolbar">
+                        <h2>Product Management</h2>
+                        <button type="button" class="btn-add-product" onclick="document.getElementById('addProductForm').scrollIntoView()">+ Add Product</button>
+                    </div>
+
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://placehold.co/300x300/FFF8E1/FF8C00?text=Product+1" alt="Product"></td>
+                                <td>Premium Hoodie</td>
+                                <td>$120.00</td>
+                                <td>50</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn-edit">Edit</button>
+                                    <button type="button" class="btn-delete">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://placehold.co/300x300/E3F2FD/1565C0?text=Product+2" alt="Product"></td>
+                                <td>Modern Sneakers</td>
+                                <td>$86.00</td>
+                                <td>30</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn-edit">Edit</button>
+                                    <button type="button" class="btn-delete">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://placehold.co/300x300/E8F5E9/2E7D32?text=Product+3" alt="Product"></td>
+                                <td>Leather Bag</td>
+                                <td>$45.00</td>
+                                <td>0</td>
+                                <td><span class="status-badge inactive">Out of stock</span></td>
+                                <td>
+                                    <button type="button" class="btn-edit">Edit</button>
+                                    <button type="button" class="btn-delete">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+
+                <!-- Add Product Form -->
+                <section class="add-product-section" id="addProductForm">
+                    <form class="add-product-form">
+                        <h2>Add New Product</h2>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-name">Product Name</label>
+                                <input type="text" id="product-name" placeholder="Enter product name">
+                            </div>
+                            <div class="form-group">
+                                <label for="product-price">Product Price</label>
+                                <input type="number" id="product-price" placeholder="Enter price">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-category">Category</label>
+                                <select id="product-category">
+                                    <option>Electronics</option>
+                                    <option>Clothing</option>
+                                    <option>Accessories</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-stock">Stock</label>
+                                <input type="number" id="product-stock" placeholder="Enter stock quantity">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-desc">Description</label>
+                            <textarea id="product-desc" rows="3" placeholder="Enter product description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-image">Product Image</label>
+                            <input type="file" id="product-image">
+                        </div>
+
+                        <button type="submit">Add Product</button>
+                    </form>
+                </section>
+
+                <!-- Recent Orders -->
+                <section class="recent-orders-section">
+                    <div class="section-toolbar">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="view-all-link">View all</a>
+                    </div>
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-001</td>
+                                <td>John Doe</td>
+                                <td>$210.00</td>
+                                <td><span class="status-badge active">Delivered</span></td>
+                                <td>Jun 8, 2024</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-002</td>
+                                <td>Sarah Smith</td>
+                                <td>$86.00</td>
+                                <td><span class="status-badge pending">Pending</span></td>
+                                <td>Jun 7, 2024</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-003</td>
+                                <td>Mike Johnson</td>
+                                <td>$145.00</td>
+                                <td><span class="status-badge inactive">Cancelled</span></td>
+                                <td>Jun 6, 2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </section>
+        </div>
+    </main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

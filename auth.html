@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register - Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container top-bar-wrapper">
+                <div class="top-bar-left"><a href="index.html">Brand</a></div>
+                <div class="top-bar-right">
+                    <a href="#">English, USD</a>
+                    <a href="#">Ship to</a>
+                    <a href="auth.html">Log in</a>
+                    <a href="auth.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container main-header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="index.html"><img src="https://placehold.co/140x50/0D6EFD/ffffff?text=Brand" alt="Brand Logo"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <select><option>All category</option></select>
+                    <button type="button">Search</button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action-btn"><span class="action-icon">♡</span><span>Wishlist</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">📦</span><span>My orders</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">👤</span><span>My profile</span></a>
+                    <a href="cart.html" class="action-btn"><span class="action-icon">🛒</span><span>My cart</span><span class="cart-count-badge">0</span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container navbar-wrapper">
+                <div class="all-categories"><button type="button">☰ All categories</button></div>
+                <div class="navigation-menu">
+                    <ul class="nav-links">
+                        <li><a href="#">Hot offers</a></li>
+                        <li><a href="#">Gift boxes</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Menu item</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" type="button">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-ship"><a href="#">Ship to 🇩🇪</a></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="authentication-page">
+        <section class="authentication-section">
+            <div class="container authentication-wrapper">
+
+                <!-- Login Form -->
+                <div class="login-form-container">
+                    <form class="login-form">
+                        <h1>Login</h1>
+                        <p class="auth-subtitle">Welcome back! Please enter your details.</p>
+
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox"> Remember me
+                            </label>
+                            <a href="#" class="forgot-link">Forgot password?</a>
+                        </div>
+
+                        <button type="submit">Login</button>
+
+                        <p class="auth-switch">
+                            Don't have an account? <a href="#">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="signup-form-container">
+                    <form class="signup-form">
+                        <h1>Create Account</h1>
+                        <p class="auth-subtitle">Sign up to get started today.</p>
+
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <input type="email" id="signup-email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-phone">Phone Number</label>
+                            <input type="tel" id="signup-phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" placeholder="Create password">
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox"> I agree to the <a href="#">Terms & Conditions</a>
+                            </label>
+                        </div>
+
+                        <button type="submit">Create Account</button>
+
+                        <p class="auth-switch">
+                            Already have an account? <a href="#">Log in</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            <div class="footer-column">
+                <h3>Brand</h3>
+                <p>Best information about the company goes here</p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For users</h3>
+                <ul>
+                    <li><a href="auth.html">Login</a></li>
+                    <li><a href="auth.html">Register</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

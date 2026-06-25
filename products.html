@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+ 
+    <!-- HEADER -->
+    <header class="site-header">
+ 
+        <div class="top-bar">
+            <div class="container top-bar-wrapper">
+                <div class="top-bar-left">
+                    <a href="index.html">Brand</a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#">English, USD</a>
+                    <a href="#">Ship to</a>
+                    <a href="auth.html">Log in</a>
+                    <a href="auth.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="main-header">
+            <div class="container main-header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="index.html"><img src="https://placehold.co/140x50/0D6EFD/ffffff?text=Brand" alt="Brand Logo"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <select>
+                        <option>All category</option>
+                        <option>Electronics</option>
+                        <option>Clothing</option>
+                    </select>
+                    <button type="button">Search</button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action-btn"><span class="action-icon">♡</span><span>Wishlist</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">📦</span><span>My orders</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">👤</span><span>My profile</span></a>
+                    <a href="cart.html" class="action-btn"><span class="action-icon">🛒</span><span>My cart</span><span class="cart-count-badge">0</span></a>
+                </div>
+            </div>
+        </div>
+ 
+        <nav class="navbar">
+            <div class="container navbar-wrapper">
+                <div class="all-categories">
+                    <button type="button">☰ All categories</button>
+                </div>
+                <div class="navigation-menu">
+                    <ul class="nav-links">
+                        <li><a href="#">Hot offers</a></li>
+                        <li><a href="#">Gift boxes</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Menu item</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" type="button">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-ship"><a href="#">Ship to 🇩🇪</a></div>
+            </div>
+        </nav>
+ 
+    </header>
+ 
+ 
+    <!-- MAIN CONTENT -->
+    <main class="products-page">
+ 
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-bar">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>›</span>
+                    <a href="#">Electronics</a>
+                    <span>›</span>
+                    <span>Mobile accessory</span>
+                </nav>
+                <p>12,911 items found</p>
+            </div>
+        </div>
+ 
+ 
+        <section class="products-layout">
+            <div class="container products-layout-wrapper">
+ 
+                <!-- Sidebar Filters -->
+                <aside class="filter-sidebar">
+ 
+                    <!-- Category -->
+                    <div class="filter-group">
+                        <h3>Category</h3>
+                        <ul class="filter-category-list">
+                            <li><a href="#">Mobile accessory</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Smartphones</a></li>
+                            <li><a href="#">Modern tech</a></li>
+                        </ul>
+                    </div>
+ 
+                    <!-- Brands -->
+                    <div class="filter-group">
+                        <h3>Brands</h3>
+                        <label><input type="checkbox"> Samsung</label>
+                        <label><input type="checkbox"> Apple</label>
+                        <label><input type="checkbox"> Huawei</label>
+                        <label><input type="checkbox"> Pocco</label>
+                        <label><input type="checkbox"> Lenovo</label>
+                        <a href="#" class="filter-see-all">See all</a>
+                    </div>
+ 
+                    <!-- Features -->
+                    <div class="filter-group">
+                        <h3>Features</h3>
+                        <label><input type="checkbox"> Metallic</label>
+                        <label><input type="checkbox"> Plastic cover</label>
+                        <label><input type="checkbox"> 8GB Ram</label>
+                        <label><input type="checkbox"> Super power</label>
+                        <label><input type="checkbox"> Large memory</label>
+                        <a href="#" class="filter-see-all">See all</a>
+                    </div>
+ 
+                    <!-- Price Range -->
+                    <div class="filter-group">
+                        <h3>Price range</h3>
+                        <div class="price-inputs">
+                            <input type="number" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" placeholder="Max">
+                        </div>
+                        <input type="range" class="price-range-slider">
+                    </div>
+ 
+                    <!-- Condition -->
+                    <div class="filter-group">
+                        <h3>Condition</h3>
+                        <label><input type="radio" name="condition"> Any</label>
+                        <label><input type="radio" name="condition"> Refurbished</label>
+                        <label><input type="radio" name="condition"> Brand new</label>
+                        <label><input type="radio" name="condition"> Old items</label>
+                    </div>
+ 
+                    <!-- Ratings -->
+                    <div class="filter-group">
+                        <h3>Ratings</h3>
+                        <label class="rating-label"><span class="stars">★★★★★</span></label>
+                        <label class="rating-label"><span class="stars">★★★★☆</span></label>
+                        <label class="rating-label"><span class="stars">★★★☆☆</span></label>
+                        <label class="rating-label"><span class="stars">★★☆☆☆</span></label>
+                    </div>
+ 
+                </aside>
+ 
+ 
+                <!-- Products Content -->
+                <section class="products-content">
+ 
+                    <!-- Toolbar -->
+                    <div class="products-toolbar">
+                        <div class="toolbar-left">
+                            <span>Featured</span>
+                        </div>
+                        <div class="toolbar-right">
+                            <select class="sort-select">
+                                <option>Latest</option>
+                                <option>Price Low to High</option>
+                                <option>Price High to Low</option>
+                            </select>
+                            <!-- View Toggle -->
+                            <div class="view-toggle">
+                                <button type="button" class="view-btn active" id="listViewBtn">☰</button>
+                                <button type="button" class="view-btn" id="gridViewBtn">⊞</button>
+                            </div>
+                        </div>
+                    </div>
+ 
+ 
+                    <!-- Product List View -->
+                    <div class="products-list" id="productsContainer">
+ 
+                        <article class="product-list-card">
+                            <div class="list-card-image">
+                                <img src="https://placehold.co/300x300/FFF8E1/FF8C00?text=Product+1" alt="GoPro Camera">
+                            </div>
+                            <div class="list-card-details">
+                                <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                <div class="list-card-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(32)</span>
+                                </div>
+                                <p class="list-card-desc">Lorem ipsum dolor sit amet consectetur. Diam orci pellentesque id integer amet.</p>
+                                <a href="product-details.html" class="view-detail-link">View detail</a>
+                            </div>
+                            <div class="list-card-price">
+                                <p class="price-main">$98.00</p>
+                                <p class="price-sub">$120.00</p>
+                                <button type="button" class="add-to-cart-btn">Add to cart</button>
+                            </div>
+                        </article>
+ 
+                        <article class="product-list-card">
+                            <div class="list-card-image">
+                                <img src="https://placehold.co/300x300/E3F2FD/1565C0?text=Product+2" alt="GoPro Camera">
+                            </div>
+                            <div class="list-card-details">
+                                <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                <div class="list-card-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(32)</span>
+                                </div>
+                                <p class="list-card-desc">Lorem ipsum dolor sit amet consectetur. Diam orci pellentesque id integer amet.</p>
+                                <a href="product-details.html" class="view-detail-link">View detail</a>
+                            </div>
+                            <div class="list-card-price">
+                                <p class="price-main">$98.00</p>
+                                <p class="price-sub">$120.00</p>
+                                <button type="button" class="add-to-cart-btn">Add to cart</button>
+                            </div>
+                        </article>
+ 
+                        <article class="product-list-card">
+                            <div class="list-card-image">
+                                <img src="https://placehold.co/300x300/E8F5E9/2E7D32?text=Product+3" alt="GoPro Camera">
+                            </div>
+                            <div class="list-card-details">
+                                <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                <div class="list-card-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(32)</span>
+                                </div>
+                                <p class="list-card-desc">Lorem ipsum dolor sit amet consectetur. Diam orci pellentesque id integer amet.</p>
+                                <a href="product-details.html" class="view-detail-link">View detail</a>
+                            </div>
+                            <div class="list-card-price">
+                                <p class="price-main">$98.00</p>
+                                <p class="price-sub">$120.00</p>
+                                <button type="button" class="add-to-cart-btn">Add to cart</button>
+                            </div>
+                        </article>
+ 
+                        <article class="product-list-card">
+                            <div class="list-card-image">
+                                <img src="https://placehold.co/300x300/FCE4EC/AD1457?text=Product+4" alt="GoPro Camera">
+                            </div>
+                            <div class="list-card-details">
+                                <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                <div class="list-card-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(32)</span>
+                                </div>
+                                <p class="list-card-desc">Lorem ipsum dolor sit amet consectetur. Diam orci pellentesque id integer amet.</p>
+                                <a href="product-details.html" class="view-detail-link">View detail</a>
+                            </div>
+                            <div class="list-card-price">
+                                <p class="price-main">$98.00</p>
+                                <p class="price-sub">$120.00</p>
+                                <button type="button" class="add-to-cart-btn">Add to cart</button>
+                            </div>
+                        </article>
+ 
+                        <article class="product-list-card">
+                            <div class="list-card-image">
+                                <img src="https://placehold.co/300x300/F3E5F5/6A1B9A?text=Product+5" alt="GoPro Camera">
+                            </div>
+                            <div class="list-card-details">
+                                <h3>GoPro HERO6 4K Action Camera - Black</h3>
+                                <div class="list-card-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">(32)</span>
+                                </div>
+                                <p class="list-card-desc">Lorem ipsum dolor sit amet consectetur. Diam orci pellentesque id integer amet.</p>
+                                <a href="product-details.html" class="view-detail-link">View detail</a>
+                            </div>
+                            <div class="list-card-price">
+                                <p class="price-main">$98.00</p>
+                                <p class="price-sub">$120.00</p>
+                                <button type="button" class="add-to-cart-btn">Add to cart</button>
+                            </div>
+                        </article>
+ 
+                    </div>
+ 
+ 
+                    <!-- Pagination -->
+                    <div class="pagination-wrapper">
+                        <nav aria-label="Pagination Navigation">
+                            <ul class="pagination-list">
+                                <li><a href="#">‹</a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">›</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+ 
+                </section>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
+ 
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            <div class="footer-column">
+                <h3>Brand</h3>
+                <p>Best information about the company goes here</p>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For users</h3>
+                <ul>
+                    <li><a href="auth.html">Login</a></li>
+                    <li><a href="auth.html">Register</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="js/api.js"></script>
+<script src="js/main.js"></script>
+ 
+</body>
+</html>

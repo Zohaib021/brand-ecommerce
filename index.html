@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - E-Commerce Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container top-bar-wrapper">
+                <div class="top-bar-left"><a href="#">Brand</a></div>
+                <div class="top-bar-right">
+                    <a href="#">English, USD</a>
+                    <a href="#">Ship to</a>
+                    <a href="auth.html">Log in</a>
+                    <a href="auth.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container main-header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="index.html">
+                        <img src="images/assets/logo/logo.png" alt="Brand Logo" style="height:50px;" onerror="this.outerHTML='<span style=font-size:24px;font-weight:700;color:#0D6EFD>Brand</span>'">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <select>
+                        <option>All category</option>
+                        <option>Electronics</option>
+                        <option>Clothing</option>
+                        <option>Accessories</option>
+                    </select>
+                    <button type="button">Search</button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="action-btn"><span class="action-icon">♡</span><span>Wishlist</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">📦</span><span>My orders</span></a>
+                    <a href="#" class="action-btn"><span class="action-icon">👤</span><span>My profile</span></a>
+                    <a href="cart.html" class="action-btn"><span class="action-icon">🛒</span><span>My cart</span><span class="cart-count-badge">0</span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container navbar-wrapper">
+                <div class="all-categories"><button type="button">☰ All categories</button></div>
+                <div class="navigation-menu">
+                    <ul class="nav-links">
+                        <li><a href="#">Hot offers</a></li>
+                        <li><a href="#">Gift boxes</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Menu item</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" type="button">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-ship"><a href="#">Ship to 🇩🇪</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="container hero-wrapper">
+                <aside class="hero-sidebar">
+                    <ul>
+                        <li><a href="#">Automobiles</a></li>
+                        <li><a href="#">Clothes and wear</a></li>
+                        <li><a href="#">Home interiors</a></li>
+                        <li><a href="#">Computer and tech</a></li>
+                        <li><a href="#">Tools, equipments</a></li>
+                        <li><a href="#">Sports and outdoor</a></li>
+                        <li><a href="#">Animal and pets</a></li>
+                        <li><a href="#">Machinery tools</a></li>
+                        <li><a href="#">More category</a></li>
+                    </ul>
+                </aside>
+                <div class="hero-banner">
+                    <div class="hero-content">
+                        <p>Latest trending</p>
+                        <h1>Electronic items</h1>
+                        <a href="products.html">Learn more</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/assets/banners/hero-banner.jpg" alt="Electronics Banner" style="max-width:100%;height:auto;" onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="hero-promo">
+                    <div class="promo-card">
+                        <p>Get US $10 off</p>
+                        <span>with a new supplier</span>
+                    </div>
+                    <div class="promo-card">
+                        <p>Send quotes with</p>
+                        <span>Supplier preferences</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEALS SECTION -->
+        <section class="deals-section">
+            <div class="container">
+                <div class="section-header-inline">
+                    <h2>Deals and offers</h2>
+                    <p>Hygiene equipments</p>
+                </div>
+                <div class="countdown-timer">
+                    <div class="timer-block"><span>04</span><small>Hour</small></div>
+                    <div class="timer-block"><span>13</span><small>Min</small></div>
+                    <div class="timer-block"><span>56</span><small>Sec</small></div>
+                </div>
+                <div class="deals-grid">
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="images/assets/products/watch.jpg" alt="Smart watches" onerror="this.src='https://placehold.co/300x300/FFF8E1/FF8C00?text=Smart+Watch'">
+                        </div>
+                        <h4>Smart watches</h4>
+                        <div class="deal-badge">-25%</div>
+                    </article>
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="images/assets/products/laptop.jpg" alt="Laptops" onerror="this.src='https://placehold.co/300x300/E3F2FD/1565C0?text=Laptop'">
+                        </div>
+                        <h4>Laptops</h4>
+                        <div class="deal-badge">-15%</div>
+                    </article>
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="images/assets/products/camera.jpg" alt="GoPro cameras" onerror="this.src='https://placehold.co/300x300/E8F5E9/2E7D32?text=Camera'">
+                        </div>
+                        <h4>GoPro cameras</h4>
+                        <div class="deal-badge">-40%</div>
+                    </article>
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="images/assets/products/headphone.jpg" alt="Headphones" onerror="this.src='https://placehold.co/300x300/FCE4EC/AD1457?text=Headphones'">
+                        </div>
+                        <h4>Headphones</h4>
+                        <div class="deal-badge">-25%</div>
+                    </article>
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="images/assets/products/sneakers.jpg" alt="Sneakers" onerror="this.src='https://placehold.co/300x300/F3E5F5/6A1B9A?text=Sneakers'">
+                        </div>
+                        <h4>Sneakers</h4>
+                        <div class="deal-badge">-25%</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES SECTION -->
+        <section class="categories-section">
+            <div class="container categories-wrapper">
+                <div class="category-banner">
+                    <h3>Home and outdoor</h3>
+                    <img src="images/assets/categories/cat-clothing.jpg" alt="Home and Outdoor" style="width:100%;height:200px;object-fit:cover;" onerror="this.style.display='none'">
+                    <a href="products.html">Source now</a>
+                </div>
+                <div class="categories-grid">
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Soft+Chair" alt="Soft chairs"><h4>Soft chairs</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Sofa" alt="Sofa and chair"><h4>Sofa and chair</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Kitchen" alt="Kitchen dishes"><h4>Kitchen dishes</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Watch" alt="Smart watches"><h4>Smart watches</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Mixer" alt="Kitchen mixer"><h4>Kitchen mixer</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Blender" alt="Blenders"><h4>Blenders</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Appliance" alt="Home appliance"><h4>Home appliance</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Coffee" alt="Coffee maker"><h4>Coffee maker</h4></article>
+                </div>
+                <div class="category-banner">
+                    <h3>Consumer electronics</h3>
+                    <img src="images/assets/categories/cat-electronics.jpg" alt="Consumer Electronics" style="width:100%;height:200px;object-fit:cover;" onerror="this.style.display='none'">
+                    <a href="products.html">Source now</a>
+                </div>
+                <div class="categories-grid">
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Watch" alt="Smart watches"><h4>Smart watches</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Camera" alt="Cameras"><h4>Cameras</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Headphones" alt="Headphones"><h4>Headphones</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Watch" alt="Smart watches"><h4>Smart watches</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Gaming" alt="Gaming set"><h4>Gaming set</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Camera" alt="Cameras"><h4>Cameras</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Laptop" alt="Laptop & PC"><h4>Laptop & PC</h4></article>
+                    <article class="category-card"><img src="https://placehold.co/120x120/f5f5f5/555?text=Phone" alt="Smartphones"><h4>Smartphones</h4></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPLIER BANNER -->
+        <section class="supplier-section">
+            <div class="container supplier-wrapper">
+                <div class="supplier-card blue">
+                    <h3>An easy way to send requests to all suppliers</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button type="button">Send inquiry</button>
+                </div>
+                <div class="supplier-card gray">
+                    <h3>Send quote to suppliers</h3>
+                    <form class="supplier-form">
+                        <input type="text" placeholder="What item you need?">
+                        <div class="supplier-form-row">
+                            <input type="number" placeholder="Quantity">
+                            <select><option>Pcs</option></select>
+                        </div>
+                        <button type="submit">Send inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECOMMENDED PRODUCTS -->
+        <section class="recommended-section">
+            <div class="container">
+                <div class="section-header"><h2>Recommended items</h2></div>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/hoodie.jpg" alt="T-shirt" onerror="this.src='https://placehold.co/300x300/FFF8E1/FF8C00?text=T-shirt'"></div>
+                        <div class="product-details"><p class="product-price">$10.30</p><h3>T-shirt with multiple colors</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/sneakers.jpg" alt="Jacket" onerror="this.src='https://placehold.co/300x300/E3F2FD/1565C0?text=Jacket'"></div>
+                        <div class="product-details"><p class="product-price">$10.30</p><h3>Casual wear jacket</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/watch.jpg" alt="Watch" onerror="this.src='https://placehold.co/300x300/E8F5E9/2E7D32?text=Watch'"></div>
+                        <div class="product-details"><p class="product-price">$12.50</p><h3>Wrist watch silver</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/laptop.jpg" alt="Laptop" onerror="this.src='https://placehold.co/300x300/FCE4EC/AD1457?text=Laptop'"></div>
+                        <div class="product-details"><p class="product-price">$34.00</p><h3>Premium laptop</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/headphone.jpg" alt="Headphones" onerror="this.src='https://placehold.co/300x300/F3E5F5/6A1B9A?text=Headphones'"></div>
+                        <div class="product-details"><p class="product-price">$33.00</p><h3>Headphones for gaming</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/categories/clothing.jpg" alt="Jeans/assets" onerror="this.src='https://placehold.co/300x300/E0F7FA/00695C?text=Clothing'"></div>
+                        <div class="product-details"><p class="product-price">$8.00</p><h3>Denim jeans</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/categories/accessories.jpg" alt="Accessories" onerror="this.src='https://placehold.co/300x300/FBE9E7/BF360C?text=Accessories'"></div>
+                        <div class="product-details"><p class="product-price">$848.00</p><h3>Gold accessories</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/categories/electronics.jpg" alt="Electronics" onerror="this.src='https://placehold.co/300x300/F9FBE7/827717?text=Electronics'"></div>
+                        <div class="product-details"><p class="product-price">$12.20</p><h3>Electronics bundle</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/watch.jpg" alt="Kettle" onerror="this.src='https://placehold.co/300x300/E8EAF6/283593?text=Watch'"></div>
+                        <div class="product-details"><p class="product-price">$86.00</p><h3>Smart watch pro</h3></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"><img src="images/assets/products/sneakers.jpg" alt="Sneakers" onerror="this.src='https://placehold.co/300x300/EFEBE9/4E342E?text=Sneakers'"></div>
+                        <div class="product-details"><p class="product-price">$28.00</p><h3>Sport sneakers shoes</h3></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXTRA SERVICES -->
+        <section class="services-section">
+            <div class="container services-grid">
+                <article class="service-card"><div class="service-icon">🏭</div><h4>Source from industry hubs</h4></article>
+                <article class="service-card"><div class="service-icon">🔍</div><h4>Customize your products</h4></article>
+                <article class="service-card"><div class="service-icon">🚚</div><h4>Fast, reliable shipping by ocean or air</h4></article>
+                <article class="service-card"><div class="service-icon">🛡️</div><h4>Product monitoring and inspection</h4></article>
+            </div>
+        </section>
+
+        <!-- SUPPLIERS BY REGION -->
+        <section class="suppliers-region-section">
+            <div class="container">
+                <div class="section-header"><h2>Suppliers by region</h2></div>
+                <div class="regions-grid">
+                    <div class="region-item"><span>🇦🇪</span><div><p>Arabic Emirates</p><small>shopname.ae</small></div></div>
+                    <div class="region-item"><span>🇦🇺</span><div><p>Australia</p><small>shopname.au</small></div></div>
+                    <div class="region-item"><span>🇺🇸</span><div><p>United States</p><small>shopname.us</small></div></div>
+                    <div class="region-item"><span>🇷🇺</span><div><p>Russia</p><small>shopname.ru</small></div></div>
+                    <div class="region-item"><span>🇮🇹</span><div><p>Italy</p><small>shopname.it</small></div></div>
+                    <div class="region-item"><span>🇩🇰</span><div><p>Denmark</p><small>shopname.dk</small></div></div>
+                    <div class="region-item"><span>🇫🇷</span><div><p>France</p><small>shopname.fr</small></div></div>
+                    <div class="region-item"><span>🇦🇹</span><div><p>Austria</p><small>shopname.at</small></div></div>
+                    <div class="region-item"><span>🇨🇳</span><div><p>China</p><small>shopname.cn</small></div></div>
+                    <div class="region-item"><span>🇬🇧</span><div><p>Great Britain</p><small>shopname.co.uk</small></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section">
+            <div class="container newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h2>Subscribe on our newsletter</h2>
+                    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <label for="newsletter-email">Email Address</label>
+                        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Email">
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            <div class="footer-column">
+                <h3>Brand</h3>
+                <p>Best information about the company goes here</p>
+                <div class="footer-social">
+                    <a href="#">f</a><a href="#">t</a><a href="#">in</a><a href="#">yt</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For users</h3>
+                <ul>
+                    <li><a href="auth.html">Login</a></li>
+                    <li><a href="auth.html">Register</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get app</h3>
+                <a href="#" class="app-btn">App Store</a>
+                <a href="#" class="app-btn">Google Play</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Brand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
